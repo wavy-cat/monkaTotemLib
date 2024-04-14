@@ -31,3 +31,5 @@ bin/
 
 /_wavycat_.png
 /totem.png
+/cli.py
+/src/main/kotlin/example.kt
