@@ -1,4 +1,4 @@
-package options
+package ru.wavycat.monkaTotemLib.options
 
 enum class TopLayers(val value: String) {
     NOTHING("nothing"),

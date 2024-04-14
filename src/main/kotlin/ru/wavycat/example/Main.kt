@@ -1,5 +1,8 @@
-import options.SkinType
-import options.TopLayers
+package ru.wavycat.example
+
+import ru.wavycat.monkaTotemLib.options.SkinType
+import ru.wavycat.monkaTotemLib.options.TopLayers
+import ru.wavycat.monkaTotemLib.TotemBuilder
 
 fun main() {
     val builder = TotemBuilder(

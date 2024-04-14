@@ -29,5 +29,5 @@ bin/
 .DS_Store
 /.idea/
 
-/cli.py
 /_wavycat_.png
+/totem.png
