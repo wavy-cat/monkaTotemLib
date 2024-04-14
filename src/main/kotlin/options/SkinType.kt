@@ -1,4 +1,7 @@
 package options
 
-enum class SkinType {
+enum class SkinType(val value: String) {
+    AUTO("auto"),
+    WIDE("wide"),
+    SLIM("slim")
 }
