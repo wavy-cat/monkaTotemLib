@@ -35,4 +35,4 @@ During the development, the IntelliJ build system was used along with Kotlin ver
 
 ### Installing
 
-IDK. Try copying the `ru.wavycat.monkaTotemLib` package to the `scr/main/kotlin` folder in your project.
+IDK. Try copying the `ru.wavycat.monkaTotemLib` package to the `srс/main/kotlin` folder in your project.
