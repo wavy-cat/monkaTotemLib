@@ -28,3 +28,11 @@ fun main() {
     builder.generate()
 }
 ```
+
+### Development Tools and Versions
+
+During the development, the IntelliJ build system was used along with Kotlin version 1.9.23 and Liberica JDK 21.0.2.
+
+### Installing
+
+IDK. Try copying the `ru.wavycat.monkaTotemLib` package to the `scr/main/kotlin` folder in your project.
