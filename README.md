@@ -58,7 +58,7 @@ class Main {
 
 ### Development Tools and Versions
 
-During the development, the IntelliJ build system was used along with Kotlin version 1.9.23 and Liberica JDK 21.0.2.
+During the development, the IntelliJ build system was used along with Kotlin version 1.9.23 and Liberica JDK 21.0.3.
 
 ### Installing
 
