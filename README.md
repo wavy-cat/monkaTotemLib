@@ -18,14 +18,17 @@ fun main() {
     val builder = TotemBuilder(
         "python3",
         "cli.py",
-        "skin.png",
+    )
+    val (successful, output) = builder.generate(
+        "_wavycat_.png",
         "totem.png",
-        SkinType.AUTO,
-        TopLayers.ALL,
+        SkinType.WIDE,
+        TopLayers.HEAD_AND_HANDS,
         roundHead = true,
         scale = 10u
     )
-    builder.generate()
+    println(successful)
+    println(output)
 }
 ```
 
