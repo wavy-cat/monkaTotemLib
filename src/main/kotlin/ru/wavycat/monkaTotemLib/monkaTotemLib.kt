@@ -20,6 +20,7 @@ class TotemBuilder(
      * Generates a totem using the CLI.
      * Returns a pair of Boolean indicating whether the totem was generated successfully, and String containing the CLI output.
      */
+    @JvmName("generate")
     fun generate(
         skinPath: String,
         totemPath: String,
@@ -29,7 +30,7 @@ class TotemBuilder(
         scale: UInt
     ): Pair<Boolean, String> {
         when {
-            scale.toInt() == 0 -> throw IllegalArgumentException("Scale cannot be zero")
+            scale == 0u -> throw IllegalArgumentException("Scale cannot be zero")
             !File(skinPath).exists() -> throw IllegalArgumentException("Skin file does not exist")
             !File(totemPath).exists() -> throw IllegalArgumentException("Totem file does not exist")
         }

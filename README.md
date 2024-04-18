@@ -9,26 +9,50 @@ and [download the CLI](https://raw.githubusercontent.com/wavy-cat/wavy-totem-lib
 
 ### Code Example
 
+#### Kotlin
+
 ```kotlin
 import ru.wavycat.monkaTotemLib.options.SkinType
 import ru.wavycat.monkaTotemLib.options.TopLayers
 import ru.wavycat.monkaTotemLib.TotemBuilder
 
 fun main() {
-    val builder = TotemBuilder(
-        "python3",
-        "cli.py",
-    )
+    val builder = TotemBuilder("python3", "cli.py")
     val (successful, output) = builder.generate(
         "_wavycat_.png",
         "totem.png",
-        SkinType.WIDE,
-        TopLayers.HEAD_AND_HANDS,
+        SkinType.AUTO,
+        TopLayers.ALL,
         roundHead = true,
         scale = 10u
     )
     println(successful)
     println(output)
+}
+```
+
+#### Java
+
+```java
+import kotlin.Pair;
+import ru.wavycat.monkaTotemLib.TotemBuilder;
+import ru.wavycat.monkaTotemLib.options.SkinType;
+import ru.wavycat.monkaTotemLib.options.TopLayers;
+
+class Main {
+    public static void main(String[] args) {
+        TotemBuilder builder = new TotemBuilder("python3", "cli.py");
+        Pair<Boolean, String> result = builder.generate(
+                "_wavycat_.png",
+                "totem.png",
+                SkinType.AUTO,
+                TopLayers.ALL,
+                true,
+                10
+        );
+        System.out.println(result.component1()); // Whether the request was successfully executed
+        System.out.println(result.component2()); // Output
+    }
 }
 ```
 
