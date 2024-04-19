@@ -35,7 +35,7 @@ class TotemBuilder(
         topLayers: TopLayers,
         roundHead: Boolean,
         scale: UInt
-    ): Pair<Boolean, String> {
+    ): Boolean {
         when {
             scale == 0u -> throw IllegalArgumentException("Scale cannot be zero")
             !File(skinPath).exists() -> throw IllegalArgumentException("Skin file does not exist")
@@ -59,8 +59,9 @@ class TotemBuilder(
         val process = processBuilder.start()
         val reader = BufferedReader(InputStreamReader(process.inputStream))
         val output = reader.readText().removeSuffix("\n")
+
         reader.close()
-        val ok = output == "\u001B[90m[\u001B[92m✔\u001B[90m] \u001B[94mGeneration completed successfully\u001B[0m"
-        return ok to output
+
+        return output == "\u001B[90m[\u001B[92m✔\u001B[90m] \u001B[94mGeneration completed successfully\u001B[0m"
     }
 }
