@@ -39,7 +39,6 @@ class TotemBuilder(
         when {
             scale == 0u -> throw IllegalArgumentException("Scale cannot be zero")
             !File(skinPath).exists() -> throw IllegalArgumentException("Skin file does not exist")
-            !File(totemPath).exists() -> throw IllegalArgumentException("Totem file does not exist")
         }
 
         val processBuilder = ProcessBuilder(
