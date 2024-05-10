@@ -5,7 +5,7 @@
 > the [original Python library](https://github.com/wavy-cat/wavy-totem-lib).
 
 You need to install Python 3.8 or higher, the wavy-totem-lib library (`pip3 install wavy-totem-lib==1.5.1`),
-and [download the CLI](https://raw.githubusercontent.com/wavy-cat/wavy-totem-lib/main/cli.py).
+and [download the CLI](https://raw.githubusercontent.com/wavy-cat/wavy-totem-lib/227cfe5e38b87e7b7100a1f1d4b8b6726862d466/cli.py).
 
 ### Code Example
 
